@@ -19,11 +19,7 @@ const Header = () => (
     <Popup
       modal
       trigger={
-        <button
-          type="button"
-          className="hamburg-button"
-          testid="hamburgerIconButton"
-        >
+        <button type="button" className="hamburg-button">
           <GiHamburgerMenu className="nav-icon" />
         </button>
       }
@@ -36,7 +32,6 @@ const Header = () => (
               type="button"
               className="trigger-button"
               onClick={() => close()}
-              testid="closeButton"
             >
               <IoMdClose className="close-icon" />
             </button>
@@ -49,7 +44,7 @@ const Header = () => (
             >
               <li className="d-flex mb-3">
                 <AiFillHome className="home-icon" />
-                <h3 className="text-dark">Home</h3>
+                <h3 className="text-dark">Home Tab</h3>
               </li>
             </Link>
             <Link
